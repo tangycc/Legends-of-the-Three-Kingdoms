@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/sgs_favicon.png">
+    <title>Heros</title>
+</head>
+<body>
+    <header>
+            <a class="skip" href = "#main">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Introduction</a></li>
+                <li><a href = "heroes.html">Heros</a></li>
+                <li><a href = "playing_cards.html"  class="current">Playing Cards</a></li>
+                <li><a href = "simulation.html">Simulator</a></li>
+                <li><a href = "rules.html">Rules</a></li>
+            </ul>
+        </nav>
+        <h1>Heroes</h1>
+    </header>
+    <main id="main">
+        <div>
+            <p>This is a collection of my favorite cards.</p>
+        </div>
+        <!-- TODO: Add descriptions -->
+        <!-- TODO: Fix alt -->
+        <section>
+            <h2>Basic</h2>
+            <article>
+                <h3>Strike</h3>
+                <figure>
+                    <img src="imgs/cards/strike.jpg" alt="Strike">
+                </figure>
+                <p>The most common card to cause damage</p>
+            </article>
+            <article>
+                <h3>Dodge</h3>
+                <figure>
+                    <img src="imgs/cards/dodge.jpg" alt="Dodge">
+                </figure>
+                <p>Play dodge when somebody striks you</p>
+            </article>
+            <article>
+                <h3>Peach</h3>
+                <figure>
+                    <img src="imgs/cards/peach.jpg" alt="Peach">
+                </figure>
+                <p>Life Points++</p>
+            </article>
+        </section>
+        <!-- Website: https://steamcommunity.com/sharedfiles/filedetails/?id=2105469238 -->
+        <section>
+            <h2>Scroll</h2>
+            <p>Unlike basic cards, each scroll has special effects.</p>
+            <article>
+                <h3>Contentment</h3>
+                <figure>
+                    <img src="imgs/cards/lebu.jpg" alt="Contentment">
+                </figure>
+                <p>Don't fall into the trap of Congenial Confinement</p>
+            </article>
+
+            <article>
+                <h3>Arrow Barrage</h3>
+                <figure>
+                    <img src="imgs/cards/wanjian.jpg" alt="Arrow Barrage">
+                </figure>
+                <p>Be careful of Yu Shao's great army</p>
+            </article>
+
+            <article>
+                <h3>Barbarian Invasion</h3>
+                <figure>
+                    <img src="imgs/cards/nanman.jpg" alt="Barbarian Invasion">
+                </figure>
+                <p>The mystical force in southern China</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Equipment - Mount</h2>
+            <p>The Legendary Horses of the Three Kingdoms</p>
+
+            <article>
+                <h3>Shadowrunner</h3>
+                <figure>
+                    <img src="imgs/cards/jueying.jpg" alt="Shadowrunner">
+                </figure>
+                <p>One of Cao Cao's favorite horses</p>
+            </article>
+
+            <article>
+                <h3>Red Hare</h3>
+                <figure>
+                    <img src="imgs/cards/redhare.jpg" alt="Red Hare">
+                </figure>
+                <p>Guan Yu's legendary horse</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Equipment - Weapon</h2>
+            <p>Equip to strengthen your hero!</p>
+            <article>
+                <h3>Chu Ko Nu</h3>
+                <figure>
+                    <img src="imgs/cards/liannu.jpg" alt="Chu Ko Nu">
+                </figure>
+                <p>Zhuge Liang's invention</p>
+                <p>Tips: good for Lü Bu, Lü Meng, Zhao Yun, Zhang Fei</p>
+            </article>
+
+            <article>
+                <h3>Eighteen-span Viper Spear</h3>
+                <figure>
+                    <img src="imgs/cards/zhangba.jpg" alt="Eighteen-span Viper Spear">
+                </figure>
+                <p>Zhang Fei's weapon</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Equipment - Armor</h2>
+            <p>Protect your hero</p>
+            <article>
+                <h3>Eight Diagram Formation</h3>
+                <figure>
+                    <img src="imgs/cards/bagua.jpg" alt="Eight Diagram Formation">
+                </figure>
+                <p>The ancient art of Yin and Yang</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> by Yicheng Tang. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

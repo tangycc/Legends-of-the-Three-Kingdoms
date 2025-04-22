@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="imgs/sgs_favicon.png" />
+  <title>Simulator</title>
+</head>
+<body>
+
+<header>
+  <a class="skip" href="#main">Skip to Main Content</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="heroes.html">Heros</a></li>
+      <li><a href="playing_cards.html">Playing Cards</a></li>
+      <li><a href="simulation.html" class="current">Simulator</a></li>
+      <li><a href="rules.html">Rules</a></li>
+    </ul>
+  </nav>
+  <h1>Simulation</h1>
+</header>
+
+<main id="main">
+  <div>
+    <p>
+      In this demo, <strong>Cao Cao</strong> uses the <strong>Strike</strong> card to attack <strong>Liu Bei</strong>.
+      If Liu Bei has a <strong>Dodge</strong> card, he can block the attack.
+      Otherwise, he takes 1 damage. Your goal is to defeat Liu Bei. Try it out by clicking the "Play Strike" button!
+    </p>
+  </div>
+
+  <div class="battlefield">
+    <div class="character" id="player1">
+        <h2>Cao Cao</h2>
+        <img src="imgs/heroes/caocao.jpg" alt="cao cao">
+
+        <p>Health: 4</p>
+
+        <button class="attack-btn" onclick="useSha()">Play Strike</button>
+        
+        <div id="shaCards" class="card-hand">
+          <img src="imgs/cards/strike.jpg" alt="Strike" class="card-img">
+          <img src="imgs/cards/strike.jpg" alt="Strike" class="card-img">
+        </div>
+    </div>
+
+    <div class="character" id="player2">
+        <h2>Liu Bei</h2>
+
+        <div class="hero-wrapper">
+
+          <img src="imgs/heroes/liubei.jpg" alt="liu bei">
+
+          <img id="deathOverlay" class="death-overlay-img" src="imgs/dead.png" alt="dead">
+        </div>
+
+        <p>Health: <span id="hp2">1</span></p>
+      
+        <div id="shanCards" class="card-hand">
+          <img src="imgs/cards/dodge.jpg" alt="Dodge" class="card-img">
+        </div>
+    </div>
+
+  </div>
+
+  <div id="cardEffectDisplay">
+    <img id="effectImage" src="" alt="card">
+  </div>
+
+  <audio id="swordSound" src="audio/sword.mp3"></audio>
+</main>
+
+<!-- Popup-->
+<div class="modal" id="damageModal">
+  <div class="modal-content">
+    <p id="modalMessage">Message goes here</p>
+
+    <button id="confirmBtn" onclick="confirmAction()">Confirm</button>
+    <button id="resetBtn" onclick="resetGame()" style="display: none;">Reset Tutorial</button>
+  </div>
+</div>
+
+<footer>
+  <p>© Copyrights <span id="year"></span> by Yicheng Tang. All rights reserved.</p>
+</footer>
+<script src="js/simulator.js"></script>
+</body>
+</html>

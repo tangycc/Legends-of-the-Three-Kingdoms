@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/sgs_favicon.png">
+    <title>Heros</title>
+</head>
+<body>
+    <header>
+            <a class="skip" href = "#main">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Introduction</a></li>
+                <li><a href = "heroes.html" class="current">Heros</a></li>
+                <li><a href = "playing_cards.html">Playing Cards</a></li>
+                <li><a href = "simulation.html">Simulator</a></li>
+                <li><a href = "rules.html">Rules</a></li>
+            </ul>
+        </nav>
+        <h1>Heroes</h1>
+    </header>
+    <main id="main">
+        <div>
+            <p>This is a collection of my favorite heroes.</p>
+        </div>
+        
+        <section>
+            <h2>Wei</h2>
+            <p>The State of Wei is the most powerful of the Three Kingdoms. Built on Cao Cao’s legacy, it dominated northern China and played a central role in the era’s power struggles before falling to the Jin Dynasty in 265 CE. </p>
+            <article>
+                <h3>Cao Cao</h3>
+                <figure>
+                    <img src="imgs/heroes/caocao.jpg" alt="Cao Cao">
+                </figure>
+                <p>"An unscrupulous northern warlord"</p>
+                <p>Tips: Great choice if your role is Monarch.</p>
+            </article>
+            <article>
+                <h3>Sima Yi</h3>
+                <figure>
+                    <img src="imgs/heroes/simayi.jpg" alt="Sima Yi">
+                </figure>
+                <p>"A shrewd general and strategist who rose to power in Wei and laid the groundwork for the Jin Dynasty"</p>
+                <p>Tips: Wait for Scroll Lightning before using your ability</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Shu</h2>
+            <p>The Kingdom of Shu is founded by Liu Bei and guided by Zhuge Liang. </p>
+            <article>
+                <h3>Liu Bei</h3>
+                <figure>
+                    <img src="imgs/heroes/liubei.jpg" alt="Liu Bei">
+                </figure>
+                <p>"Benevolent Shu Lord"</p>
+                <p>Tips: Give cards to others before the discard phase</p>
+            </article>
+            <article>
+                <h3>Zhuge Liang</h3>
+                <figure>
+                    <img src="imgs/heroes/zhuge.jpg" alt="Zhuge Liang">
+                </figure>
+                <p>"Loyal and intelligent minister"</p>
+                <p>Tips: Use Astrology to change judgment draws</p>
+            </article>
+            <article>
+                <h3>Zhao Yun</h3>
+                <figure>
+                    <img src="imgs/heroes/zhaoyun.jpg" alt="Zhao Yun">
+                </figure>
+                <p>"Full of courage"</p>
+                <p>Tips: Prioritize keeping a dodge card in your hand</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Wu</h2>
+            <p>The kingdom in the southeast of China, a land of prosperity and talent.</p>
+            <article>
+                <h3>Sun Quan</h3>
+                <figure>
+                    <img src="imgs/heroes/sunquan.jpg" alt="Sun Quan">
+                </figure>
+                <p>"Crave peace but is not afraid to fight."</p>
+                <p>Tips: Use skill Balance every turn</p>
+            </article>
+            <article>
+                <h3>Huang Gai</h3>
+                <figure>
+                    <img src="imgs/heroes/huanggai.jpg" alt="Huang Gai">
+                </figure>
+                <p>"The model of sacrifice"</p>
+                <p>Tips: lose points to lanuch an unstoppable counterattack</p>
+            </article>
+        </section>
+        <!-- TODO: fix pro tips -->
+        <section>
+            <h2>Neutral</h2>
+            <p>Multiple warlords</p>
+            <article>
+                <h3>lv Bu</h3>
+                <figure>
+                    <img src="imgs/heroes/lvbu.jpg" alt="lv Bu">
+                </figure>
+                <p>"Brave but brainless"</p>
+                <p>Tips: Equip the Chu Ko Nu ASAP</p>
+            </article>
+            <article>
+                <h3>Lü Bu</h3>
+                <figure>
+                    <img src="imgs/heroes/diaochan.jpg" alt="Lü Bu">
+                </figure>
+                <p>"Don't be desguised by her beauty"</p>
+                <p>Tips: Use mischef to test loyalty</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> by Yicheng Tang. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

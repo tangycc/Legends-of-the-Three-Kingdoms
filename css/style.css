@@ -1,0 +1,283 @@
+/* skip to main */
+.skip{
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* navigation bar */
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #4A2B6F;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* highlight the current webpage */   
+a.current{
+    color: #D4A32D;
+}
+
+#logo{
+    max-width: 100%;
+}
+
+
+/* general format */
+li{
+    font-size: large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    padding: 5px 0 5px 0;
+}
+
+p{
+    font-size: large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    padding: 5px 0 5px 0;
+}
+
+label{
+    font-size: large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    padding: 5px 0 5px 0;
+}
+
+/* larger text */
+h1{
+    font-size: x-large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    color: #000;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+h2{
+    font-size: x-large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    border: solid #B88B2D 2px;
+    background: #4A2B6F;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: x-large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    border: solid #B88B2D 2px;
+    background: #4A2B6F;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div{
+    padding: 10px;
+}
+
+/* main content */
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section h2{
+    font-size: x-large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    border: solid #B88B2D 2px;
+    background: #4A2B6F;
+    color: #FFFFFF;
+    font-weight: bolder;
+    grid-column: 1 / -1;
+}
+
+section p{
+    font-size: large;
+    font-family: Montserrat, Nunito Sans, Merriweather;
+    grid-column: 1 / -1;
+}
+
+section article{
+    border: 5px dashed #B88B2D;
+    padding: 15px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+section article img{
+    width: 45%;
+    border-radius: 5px;
+}
+
+/* Footer can use some styling and centering */
+footer{
+    background-color: #4A2B6F;
+}
+
+footer p{
+    color:#B88B2D;
+}
+
+footer a{
+    color:#B88B2D;
+}
+
+/* simulator style starts*/
+.battlefield {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f4e6;
+}
+
+.character {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+
+button.attack-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c72121;
+    color: white;
+}
+
+.dead {
+    color: gray;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    border-radius: 10px;
+    padding: 8px 16px;
+    background-color: #3e7cb1;
+    color: white;
+    border: none;
+}
+
+/* playing cards */
+.card-hand {
+    margin-top: 10px;
+}
+
+.card-img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.hero-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.death-overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* card effect */
+#cardEffectDisplay{
+    position: fixed; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.4s ease; 
+    z-index: 9999;
+}
+
+#effectImage{
+    width: 120px;
+    height: auto;
+}
+
+/* with mouse: hover effect for links*/
+a:hover{
+    text-decoration: underline;
+}
+
+/* animation */
+#logo{
+    animation: mymove 2s forwards;
+}
+    
+@keyframes mymove {
+    from {opacity: 0; width: 25px;}
+    to {opacity: 1; width: 475px;}
+}
+
+/* rules page */
+.video {
+    position: relative;
+    height: 450px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video iframe {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+}

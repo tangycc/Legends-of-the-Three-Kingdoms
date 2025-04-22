@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/sgs_favicon.png">
+    <title>Rules</title>
+</head>
+<body>
+    <header>
+        <a class="skip" href = "#main">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Introduction</a></li>
+                <li><a href = "heroes.html">Heros</a></li>
+                <li><a href = "playing_cards.html">Playing Cards</a></li>
+                <li><a href = "simulation.html">Simulator</a></li>
+                <li><a href = "rules.html" class="current">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Tutorial</h1>
+        <!-- TODO: center the video -->
+        <p>Watch this tutorial to learn how to play the Legends of the Three Kingdoms!</p>
+        
+        <!-- TODO: element? -->
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/8kbAEZbr7Oo" title="Tutorial Video" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Copyrights <span id="year"></span> by Yicheng Tang. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
